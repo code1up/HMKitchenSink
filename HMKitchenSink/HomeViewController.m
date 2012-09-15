@@ -130,19 +130,15 @@
     }
     
     // http://soundbible.com/819-Checkout-Scanner-Beep.html
-    //Get the filename of the sound file:
+
+    // Get the filename of the sound file.
 	NSString *path = [NSString stringWithFormat:@"%@%@", [[NSBundle mainBundle] resourcePath], @"/Beep.wav"];
-    
-	//declare a system sound
-	SystemSoundID soundID;
-    
-	//Get a URL for the sound file
 	NSURL *filePath = [NSURL fileURLWithPath:path isDirectory:NO];
     
-	// Use audio sevices to create the sound
+	SystemSoundID soundID;
 	AudioServicesCreateSystemSoundID((__bridge CFURLRef)filePath, &soundID);
                                      
-	// Use audio services to play the sound
+    // Play the sound.
 	AudioServicesPlaySystemSound(soundID);
 }
 
