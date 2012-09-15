@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E801AE8B15FFC1750046FE78 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = E801AE8A15FFC1750046FE78 /* Person.m */; };
+		E801AE8F15FFCC1F0046FE78 /* PersonAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = E801AE8E15FFCC1F0046FE78 /* PersonAnnotation.m */; };
+		E801AE921600F40E0046FE78 /* PeopleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E801AE911600F40E0046FE78 /* PeopleTableViewController.m */; };
+		E83A967515FD379F008FD6F5 /* PersonService.m in Sources */ = {isa = PBXBuildFile; fileRef = E83A967415FD379F008FD6F5 /* PersonService.m */; };
 		E898603015FB4D3500ACD5B1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E898602F15FB4D3500ACD5B1 /* UIKit.framework */; };
 		E898603215FB4D3500ACD5B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E898603115FB4D3500ACD5B1 /* Foundation.framework */; };
 		E898603415FB4D3500ACD5B1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E898603315FB4D3500ACD5B1 /* CoreGraphics.framework */; };
@@ -14,10 +18,33 @@
 		E898603C15FB4D3500ACD5B1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E898603A15FB4D3500ACD5B1 /* InfoPlist.strings */; };
 		E898603E15FB4D3500ACD5B1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E898603D15FB4D3500ACD5B1 /* main.m */; };
 		E898604215FB4D3500ACD5B1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E898604115FB4D3500ACD5B1 /* AppDelegate.m */; };
-		E898604515FB4D3500ACD5B1 /* HMKitchenSink.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E898604315FB4D3500ACD5B1 /* HMKitchenSink.xcdatamodeld */; };
+		E898604E15FB4E8C00ACD5B1 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E898604C15FB4E8C00ACD5B1 /* HomeViewController.m */; };
+		E8C9946A15FBA18A0061D1E0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8C9946915FBA18A0061D1E0 /* MapKit.framework */; };
+		E8C9947015FBB1AF0061D1E0 /* UserMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8C9946F15FBB1AF0061D1E0 /* UserMapViewController.xib */; };
+		E8C9947315FBB2960061D1E0 /* UserMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8C9947215FBB2960061D1E0 /* UserMapViewController.m */; };
+		E8C9947615FBB90D0061D1E0 /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8C9947515FBB90D0061D1E0 /* NextViewController.m */; };
+		E8C9947815FBB9530061D1E0 /* NextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8C9947715FBB9530061D1E0 /* NextViewController.xib */; };
+		E8C9947B15FCEE590061D1E0 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8C9947A15FCEE590061D1E0 /* CoreLocation.framework */; };
+		E8F7F9B515FB531B006B4301 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8F7F9B415FB531B006B4301 /* HomeViewController.xib */; };
+		E8F7F9B915FB56E7006B4301 /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8F7F9B715FB56E7006B4301 /* SignInViewController.m */; };
+		E8F7F9BA15FB56E7006B4301 /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8F7F9B815FB56E7006B4301 /* SignInViewController.xib */; };
+		E8FD4263160478FA0012B2A5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8FD4262160478FA0012B2A5 /* AVFoundation.framework */; };
+		E8FD4265160479020012B2A5 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8FD4264160479020012B2A5 /* CoreMedia.framework */; };
+		E8FD4267160479090012B2A5 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8FD4266160479090012B2A5 /* CoreVideo.framework */; };
+		E8FD4269160479100012B2A5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8FD4268160479100012B2A5 /* QuartzCore.framework */; };
+		E8FD426B160479250012B2A5 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E8FD426A160479250012B2A5 /* libiconv.dylib */; };
+		E8FD426C1604793B0012B2A5 /* libzbar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E8FD4259160477480012B2A5 /* libzbar.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E801AE8915FFC1750046FE78 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		E801AE8A15FFC1750046FE78 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		E801AE8D15FFCC1F0046FE78 /* PersonAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonAnnotation.h; sourceTree = "<group>"; };
+		E801AE8E15FFCC1F0046FE78 /* PersonAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonAnnotation.m; sourceTree = "<group>"; };
+		E801AE901600F40E0046FE78 /* PeopleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeopleTableViewController.h; sourceTree = "<group>"; };
+		E801AE911600F40E0046FE78 /* PeopleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeopleTableViewController.m; sourceTree = "<group>"; };
+		E83A967315FD379F008FD6F5 /* PersonService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonService.h; sourceTree = "<group>"; };
+		E83A967415FD379F008FD6F5 /* PersonService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonService.m; sourceTree = "<group>"; };
 		E898602B15FB4D3500ACD5B1 /* HMKitchenSink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HMKitchenSink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E898602F15FB4D3500ACD5B1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E898603115FB4D3500ACD5B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -29,7 +56,52 @@
 		E898603F15FB4D3500ACD5B1 /* HMKitchenSink-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HMKitchenSink-Prefix.pch"; sourceTree = "<group>"; };
 		E898604015FB4D3500ACD5B1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E898604115FB4D3500ACD5B1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E898604415FB4D3500ACD5B1 /* HMKitchenSink.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HMKitchenSink.xcdatamodel; sourceTree = "<group>"; };
+		E898604B15FB4E8C00ACD5B1 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		E898604C15FB4E8C00ACD5B1 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		E8C9946915FBA18A0061D1E0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		E8C9946F15FBB1AF0061D1E0 /* UserMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserMapViewController.xib; sourceTree = "<group>"; };
+		E8C9947115FBB2960061D1E0 /* UserMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserMapViewController.h; sourceTree = "<group>"; };
+		E8C9947215FBB2960061D1E0 /* UserMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserMapViewController.m; sourceTree = "<group>"; };
+		E8C9947415FBB90D0061D1E0 /* NextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NextViewController.h; sourceTree = "<group>"; };
+		E8C9947515FBB90D0061D1E0 /* NextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NextViewController.m; sourceTree = "<group>"; };
+		E8C9947715FBB9530061D1E0 /* NextViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NextViewController.xib; sourceTree = "<group>"; };
+		E8C9947915FBBCCE0061D1E0 /* UserMapViewControllerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserMapViewControllerDelegate.h; sourceTree = "<group>"; };
+		E8C9947A15FCEE590061D1E0 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		E8F7F9B415FB531B006B4301 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		E8F7F9B615FB56E7006B4301 /* SignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInViewController.h; sourceTree = "<group>"; };
+		E8F7F9B715FB56E7006B4301 /* SignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInViewController.m; sourceTree = "<group>"; };
+		E8F7F9B815FB56E7006B4301 /* SignInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
+		E8F7F9BB15FB5C31006B4301 /* SignInViewControllerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignInViewControllerDelegate.h; sourceTree = "<group>"; };
+		E8FD4245160477480012B2A5 /* Decoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Decoder.h; sourceTree = "<group>"; };
+		E8FD4246160477480012B2A5 /* Exception.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Exception.h; sourceTree = "<group>"; };
+		E8FD4247160477480012B2A5 /* Image.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Image.h; sourceTree = "<group>"; };
+		E8FD4248160477480012B2A5 /* ImageScanner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageScanner.h; sourceTree = "<group>"; };
+		E8FD4249160477480012B2A5 /* Processor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Processor.h; sourceTree = "<group>"; };
+		E8FD424A160477480012B2A5 /* Scanner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Scanner.h; sourceTree = "<group>"; };
+		E8FD424B160477480012B2A5 /* Symbol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Symbol.h; sourceTree = "<group>"; };
+		E8FD424C160477480012B2A5 /* Video.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Video.h; sourceTree = "<group>"; };
+		E8FD424D160477480012B2A5 /* Window.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Window.h; sourceTree = "<group>"; };
+		E8FD424E160477480012B2A5 /* zbar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = zbar.h; sourceTree = "<group>"; };
+		E8FD424F160477480012B2A5 /* ZBarCameraSimulator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBarCameraSimulator.h; sourceTree = "<group>"; };
+		E8FD4250160477480012B2A5 /* ZBarCaptureReader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBarCaptureReader.h; sourceTree = "<group>"; };
+		E8FD4251160477480012B2A5 /* ZBarHelpController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBarHelpController.h; sourceTree = "<group>"; };
+		E8FD4252160477480012B2A5 /* ZBarImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBarImage.h; sourceTree = "<group>"; };
+		E8FD4253160477480012B2A5 /* ZBarImageScanner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBarImageScanner.h; sourceTree = "<group>"; };
+		E8FD4254160477480012B2A5 /* ZBarReaderController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBarReaderController.h; sourceTree = "<group>"; };
+		E8FD4255160477480012B2A5 /* ZBarReaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBarReaderView.h; sourceTree = "<group>"; };
+		E8FD4256160477480012B2A5 /* ZBarReaderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBarReaderViewController.h; sourceTree = "<group>"; };
+		E8FD4257160477480012B2A5 /* ZBarSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBarSDK.h; sourceTree = "<group>"; };
+		E8FD4258160477480012B2A5 /* ZBarSymbol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBarSymbol.h; sourceTree = "<group>"; };
+		E8FD4259160477480012B2A5 /* libzbar.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libzbar.a; sourceTree = "<group>"; };
+		E8FD425B160477480012B2A5 /* zbar-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-back.png"; sourceTree = "<group>"; };
+		E8FD425C160477480012B2A5 /* zbar-help.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "zbar-help.html"; sourceTree = "<group>"; };
+		E8FD425D160477480012B2A5 /* zbar-helpicons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-helpicons.png"; sourceTree = "<group>"; };
+		E8FD425E160477480012B2A5 /* zbar-samples.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-samples.png"; sourceTree = "<group>"; };
+		E8FD4262160478FA0012B2A5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		E8FD4264160479020012B2A5 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		E8FD4266160479090012B2A5 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		E8FD4268160479100012B2A5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		E8FD426A160479250012B2A5 /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +109,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8FD426B160479250012B2A5 /* libiconv.dylib in Frameworks */,
+				E8FD4269160479100012B2A5 /* QuartzCore.framework in Frameworks */,
+				E8FD4267160479090012B2A5 /* CoreVideo.framework in Frameworks */,
+				E8FD4265160479020012B2A5 /* CoreMedia.framework in Frameworks */,
+				E8FD4263160478FA0012B2A5 /* AVFoundation.framework in Frameworks */,
+				E8FD426C1604793B0012B2A5 /* libzbar.a in Frameworks */,
+				E8C9947B15FCEE590061D1E0 /* CoreLocation.framework in Frameworks */,
+				E8C9946A15FBA18A0061D1E0 /* MapKit.framework in Frameworks */,
 				E898603015FB4D3500ACD5B1 /* UIKit.framework in Frameworks */,
 				E898603215FB4D3500ACD5B1 /* Foundation.framework in Frameworks */,
 				E898603415FB4D3500ACD5B1 /* CoreGraphics.framework in Frameworks */,
@@ -47,11 +127,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E801AE931600F4170046FE78 /* People */ = {
+			isa = PBXGroup;
+			children = (
+				E801AE901600F40E0046FE78 /* PeopleTableViewController.h */,
+				E801AE911600F40E0046FE78 /* PeopleTableViewController.m */,
+			);
+			name = People;
+			sourceTree = "<group>";
+		};
+		E83A967715FD37A6008FD6F5 /* PersonService */ = {
+			isa = PBXGroup;
+			children = (
+				E83A967315FD379F008FD6F5 /* PersonService.h */,
+				E83A967415FD379F008FD6F5 /* PersonService.m */,
+				E801AE8915FFC1750046FE78 /* Person.h */,
+				E801AE8A15FFC1750046FE78 /* Person.m */,
+			);
+			name = PersonService;
+			sourceTree = "<group>";
+		};
 		E898602015FB4D3500ACD5B1 = {
 			isa = PBXGroup;
 			children = (
-				E898603715FB4D3500ACD5B1 /* HMKitchenSink */,
+				E8FD426A160479250012B2A5 /* libiconv.dylib */,
+				E8FD4268160479100012B2A5 /* QuartzCore.framework */,
+				E8FD4266160479090012B2A5 /* CoreVideo.framework */,
+				E8FD4264160479020012B2A5 /* CoreMedia.framework */,
+				E8FD4262160478FA0012B2A5 /* AVFoundation.framework */,
+				E8C9947A15FCEE590061D1E0 /* CoreLocation.framework */,
 				E898602E15FB4D3500ACD5B1 /* Frameworks */,
+				E898603715FB4D3500ACD5B1 /* HMKitchenSink */,
 				E898602C15FB4D3500ACD5B1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -67,6 +173,8 @@
 		E898602E15FB4D3500ACD5B1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E8FD4241160477480012B2A5 /* ZBarSDK */,
+				E8C9946915FBA18A0061D1E0 /* MapKit.framework */,
 				E898602F15FB4D3500ACD5B1 /* UIKit.framework */,
 				E898603115FB4D3500ACD5B1 /* Foundation.framework */,
 				E898603315FB4D3500ACD5B1 /* CoreGraphics.framework */,
@@ -78,9 +186,13 @@
 		E898603715FB4D3500ACD5B1 /* HMKitchenSink */ = {
 			isa = PBXGroup;
 			children = (
-				E898604015FB4D3500ACD5B1 /* AppDelegate.h */,
-				E898604115FB4D3500ACD5B1 /* AppDelegate.m */,
-				E898604315FB4D3500ACD5B1 /* HMKitchenSink.xcdatamodeld */,
+				E801AE931600F4170046FE78 /* People */,
+				E83A967715FD37A6008FD6F5 /* PersonService */,
+				E8C9947C15FCEE650061D1E0 /* App */,
+				E8C9947D15FCEE6B0061D1E0 /* Home */,
+				E8C9947E15FCEE780061D1E0 /* Next */,
+				E8C9947F15FCEE800061D1E0 /* SignIn */,
+				E8C9948015FCEE860061D1E0 /* Map */,
 				E898603815FB4D3500ACD5B1 /* Supporting Files */,
 			);
 			path = HMKitchenSink;
@@ -95,6 +207,123 @@
 				E898603F15FB4D3500ACD5B1 /* HMKitchenSink-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E8C9947C15FCEE650061D1E0 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E898604015FB4D3500ACD5B1 /* AppDelegate.h */,
+				E898604115FB4D3500ACD5B1 /* AppDelegate.m */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		E8C9947D15FCEE6B0061D1E0 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E898604B15FB4E8C00ACD5B1 /* HomeViewController.h */,
+				E898604C15FB4E8C00ACD5B1 /* HomeViewController.m */,
+				E8F7F9B415FB531B006B4301 /* HomeViewController.xib */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		E8C9947E15FCEE780061D1E0 /* Next */ = {
+			isa = PBXGroup;
+			children = (
+				E8C9947415FBB90D0061D1E0 /* NextViewController.h */,
+				E8C9947515FBB90D0061D1E0 /* NextViewController.m */,
+				E8C9947715FBB9530061D1E0 /* NextViewController.xib */,
+			);
+			name = Next;
+			sourceTree = "<group>";
+		};
+		E8C9947F15FCEE800061D1E0 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				E8F7F9B615FB56E7006B4301 /* SignInViewController.h */,
+				E8F7F9B715FB56E7006B4301 /* SignInViewController.m */,
+				E8F7F9B815FB56E7006B4301 /* SignInViewController.xib */,
+				E8F7F9BB15FB5C31006B4301 /* SignInViewControllerDelegate.h */,
+			);
+			name = SignIn;
+			sourceTree = "<group>";
+		};
+		E8C9948015FCEE860061D1E0 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				E8C9947115FBB2960061D1E0 /* UserMapViewController.h */,
+				E8C9947215FBB2960061D1E0 /* UserMapViewController.m */,
+				E8C9947915FBBCCE0061D1E0 /* UserMapViewControllerDelegate.h */,
+				E8C9946F15FBB1AF0061D1E0 /* UserMapViewController.xib */,
+				E801AE8D15FFCC1F0046FE78 /* PersonAnnotation.h */,
+				E801AE8E15FFCC1F0046FE78 /* PersonAnnotation.m */,
+			);
+			name = Map;
+			sourceTree = "<group>";
+		};
+		E8FD4241160477480012B2A5 /* ZBarSDK */ = {
+			isa = PBXGroup;
+			children = (
+				E8FD4242160477480012B2A5 /* Headers */,
+				E8FD4259160477480012B2A5 /* libzbar.a */,
+				E8FD425A160477480012B2A5 /* Resources */,
+			);
+			path = ZBarSDK;
+			sourceTree = "<group>";
+		};
+		E8FD4242160477480012B2A5 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				E8FD4243160477480012B2A5 /* ZBarSDK */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		E8FD4243160477480012B2A5 /* ZBarSDK */ = {
+			isa = PBXGroup;
+			children = (
+				E8FD4244160477480012B2A5 /* zbar */,
+				E8FD424E160477480012B2A5 /* zbar.h */,
+				E8FD424F160477480012B2A5 /* ZBarCameraSimulator.h */,
+				E8FD4250160477480012B2A5 /* ZBarCaptureReader.h */,
+				E8FD4251160477480012B2A5 /* ZBarHelpController.h */,
+				E8FD4252160477480012B2A5 /* ZBarImage.h */,
+				E8FD4253160477480012B2A5 /* ZBarImageScanner.h */,
+				E8FD4254160477480012B2A5 /* ZBarReaderController.h */,
+				E8FD4255160477480012B2A5 /* ZBarReaderView.h */,
+				E8FD4256160477480012B2A5 /* ZBarReaderViewController.h */,
+				E8FD4257160477480012B2A5 /* ZBarSDK.h */,
+				E8FD4258160477480012B2A5 /* ZBarSymbol.h */,
+			);
+			path = ZBarSDK;
+			sourceTree = "<group>";
+		};
+		E8FD4244160477480012B2A5 /* zbar */ = {
+			isa = PBXGroup;
+			children = (
+				E8FD4245160477480012B2A5 /* Decoder.h */,
+				E8FD4246160477480012B2A5 /* Exception.h */,
+				E8FD4247160477480012B2A5 /* Image.h */,
+				E8FD4248160477480012B2A5 /* ImageScanner.h */,
+				E8FD4249160477480012B2A5 /* Processor.h */,
+				E8FD424A160477480012B2A5 /* Scanner.h */,
+				E8FD424B160477480012B2A5 /* Symbol.h */,
+				E8FD424C160477480012B2A5 /* Video.h */,
+				E8FD424D160477480012B2A5 /* Window.h */,
+			);
+			path = zbar;
+			sourceTree = "<group>";
+		};
+		E8FD425A160477480012B2A5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E8FD425B160477480012B2A5 /* zbar-back.png */,
+				E8FD425C160477480012B2A5 /* zbar-help.html */,
+				E8FD425D160477480012B2A5 /* zbar-helpicons.png */,
+				E8FD425E160477480012B2A5 /* zbar-samples.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +378,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E898603C15FB4D3500ACD5B1 /* InfoPlist.strings in Resources */,
+				E8F7F9B515FB531B006B4301 /* HomeViewController.xib in Resources */,
+				E8F7F9BA15FB56E7006B4301 /* SignInViewController.xib in Resources */,
+				E8C9947015FBB1AF0061D1E0 /* UserMapViewController.xib in Resources */,
+				E8C9947815FBB9530061D1E0 /* NextViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,7 +394,14 @@
 			files = (
 				E898603E15FB4D3500ACD5B1 /* main.m in Sources */,
 				E898604215FB4D3500ACD5B1 /* AppDelegate.m in Sources */,
-				E898604515FB4D3500ACD5B1 /* HMKitchenSink.xcdatamodeld in Sources */,
+				E898604E15FB4E8C00ACD5B1 /* HomeViewController.m in Sources */,
+				E8F7F9B915FB56E7006B4301 /* SignInViewController.m in Sources */,
+				E8C9947315FBB2960061D1E0 /* UserMapViewController.m in Sources */,
+				E8C9947615FBB90D0061D1E0 /* NextViewController.m in Sources */,
+				E83A967515FD379F008FD6F5 /* PersonService.m in Sources */,
+				E801AE8B15FFC1750046FE78 /* Person.m in Sources */,
+				E801AE8F15FFCC1F0046FE78 /* PersonAnnotation.m in Sources */,
+				E801AE921600F40E0046FE78 /* PeopleTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,6 +474,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HMKitchenSink/HMKitchenSink-Prefix.pch";
 				INFOPLIST_FILE = "HMKitchenSink/HMKitchenSink-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/ZBarSDK\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -245,6 +489,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HMKitchenSink/HMKitchenSink-Prefix.pch";
 				INFOPLIST_FILE = "HMKitchenSink/HMKitchenSink-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/ZBarSDK\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -269,21 +517,9 @@
 				E898604A15FB4D3500ACD5B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		E898604315FB4D3500ACD5B1 /* HMKitchenSink.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				E898604415FB4D3500ACD5B1 /* HMKitchenSink.xcdatamodel */,
-			);
-			currentVersion = E898604415FB4D3500ACD5B1 /* HMKitchenSink.xcdatamodel */;
-			path = HMKitchenSink.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = E898602215FB4D3500ACD5B1 /* Project object */;
 }
