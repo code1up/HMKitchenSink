@@ -6,12 +6,16 @@
 //  Copyright (c) 2012 Alan Gorton. All rights reserved.
 //
 
+#import <AudioToolbox/AudioToolbox.h>
+
 #import "HomeViewController.h"
 #import "SignInViewController.h"
 #import "UserMapViewController.h"
 #import "ZBarSDK.h"
 
 @interface HomeViewController () <ZBarReaderDelegate>
+
+- (void)beep;
 
 @end
 
@@ -40,7 +44,7 @@
 
 - (IBAction)tapScan {
     NSLog(@"tapScan");
-    
+
     // ADD: present a barcode reader that scans from the camera feed
     ZBarReaderViewController *reader = [ZBarReaderViewController new];
     reader.readerDelegate = self;
@@ -62,6 +66,8 @@
 - (void) imagePickerController: (UIImagePickerController*) reader
  didFinishPickingMediaWithInfo: (NSDictionary*) info
 {
+    [self beep];
+    
     // ADD: get the decode results
     id<NSFastEnumeration> results = [info objectForKey: ZBarReaderControllerResults];
     ZBarSymbol *symbol = nil;
@@ -116,4 +122,28 @@
     [self setImage:nil];
     [super viewDidUnload];
 }
+
+- (void)beep
+{
+    if (TARGET_IPHONE_SIMULATOR) {
+        // return;
+    }
+    
+    // http://soundbible.com/819-Checkout-Scanner-Beep.html
+    //Get the filename of the sound file:
+	NSString *path = [NSString stringWithFormat:@"%@%@", [[NSBundle mainBundle] resourcePath], @"/Beep.wav"];
+    
+	//declare a system sound
+	SystemSoundID soundID;
+    
+	//Get a URL for the sound file
+	NSURL *filePath = [NSURL fileURLWithPath:path isDirectory:NO];
+    
+	// Use audio sevices to create the sound
+	AudioServicesCreateSystemSoundID((__bridge CFURLRef)filePath, &soundID);
+                                     
+	// Use audio services to play the sound
+	AudioServicesPlaySystemSound(soundID);
+}
+
 @end

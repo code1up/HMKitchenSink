@@ -11,6 +11,9 @@
 		E801AE8F15FFCC1F0046FE78 /* PersonAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = E801AE8E15FFCC1F0046FE78 /* PersonAnnotation.m */; };
 		E801AE921600F40E0046FE78 /* PeopleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E801AE911600F40E0046FE78 /* PeopleTableViewController.m */; };
 		E83A967515FD379F008FD6F5 /* PersonService.m in Sources */ = {isa = PBXBuildFile; fileRef = E83A967415FD379F008FD6F5 /* PersonService.m */; };
+		E86BE67C1604B076002AD2B4 /* Beep.caf in Resources */ = {isa = PBXBuildFile; fileRef = E86BE67B1604B076002AD2B4 /* Beep.caf */; };
+		E86BE6801604B547002AD2B4 /* Beep.wav in Resources */ = {isa = PBXBuildFile; fileRef = E86BE67F1604B547002AD2B4 /* Beep.wav */; };
+		E86BE6821604B56A002AD2B4 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E86BE6811604B56A002AD2B4 /* AudioToolbox.framework */; };
 		E898603015FB4D3500ACD5B1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E898602F15FB4D3500ACD5B1 /* UIKit.framework */; };
 		E898603215FB4D3500ACD5B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E898603115FB4D3500ACD5B1 /* Foundation.framework */; };
 		E898603415FB4D3500ACD5B1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E898603315FB4D3500ACD5B1 /* CoreGraphics.framework */; };
@@ -45,6 +48,10 @@
 		E801AE911600F40E0046FE78 /* PeopleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeopleTableViewController.m; sourceTree = "<group>"; };
 		E83A967315FD379F008FD6F5 /* PersonService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonService.h; sourceTree = "<group>"; };
 		E83A967415FD379F008FD6F5 /* PersonService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonService.m; sourceTree = "<group>"; };
+		E86BE67B1604B076002AD2B4 /* Beep.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Beep.caf; path = HMKitchenSink/Resources/Beep.caf; sourceTree = "<group>"; };
+		E86BE67D1604B262002AD2B4 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		E86BE67F1604B547002AD2B4 /* Beep.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = Beep.wav; path = HMKitchenSink/Resources/Beep.wav; sourceTree = "<group>"; };
+		E86BE6811604B56A002AD2B4 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		E898602B15FB4D3500ACD5B1 /* HMKitchenSink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HMKitchenSink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E898602F15FB4D3500ACD5B1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E898603115FB4D3500ACD5B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -109,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E86BE6821604B56A002AD2B4 /* AudioToolbox.framework in Frameworks */,
 				E8FD426B160479250012B2A5 /* libiconv.dylib in Frameworks */,
 				E8FD4269160479100012B2A5 /* QuartzCore.framework in Frameworks */,
 				E8FD4267160479090012B2A5 /* CoreVideo.framework in Frameworks */,
@@ -147,17 +155,22 @@
 			name = PersonService;
 			sourceTree = "<group>";
 		};
+		E86BE67A1604AF40002AD2B4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E86BE67F1604B547002AD2B4 /* Beep.wav */,
+				E86BE67B1604B076002AD2B4 /* Beep.caf */,
+			);
+			name = Resources;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		E898602015FB4D3500ACD5B1 = {
 			isa = PBXGroup;
 			children = (
-				E8FD426A160479250012B2A5 /* libiconv.dylib */,
-				E8FD4268160479100012B2A5 /* QuartzCore.framework */,
-				E8FD4266160479090012B2A5 /* CoreVideo.framework */,
-				E8FD4264160479020012B2A5 /* CoreMedia.framework */,
-				E8FD4262160478FA0012B2A5 /* AVFoundation.framework */,
-				E8C9947A15FCEE590061D1E0 /* CoreLocation.framework */,
-				E898602E15FB4D3500ACD5B1 /* Frameworks */,
+				E86BE6811604B56A002AD2B4 /* AudioToolbox.framework */,
 				E898603715FB4D3500ACD5B1 /* HMKitchenSink */,
+				E898602E15FB4D3500ACD5B1 /* Frameworks */,
 				E898602C15FB4D3500ACD5B1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -173,6 +186,13 @@
 		E898602E15FB4D3500ACD5B1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E86BE67D1604B262002AD2B4 /* Security.framework */,
+				E8FD426A160479250012B2A5 /* libiconv.dylib */,
+				E8FD4268160479100012B2A5 /* QuartzCore.framework */,
+				E8FD4266160479090012B2A5 /* CoreVideo.framework */,
+				E8FD4264160479020012B2A5 /* CoreMedia.framework */,
+				E8FD4262160478FA0012B2A5 /* AVFoundation.framework */,
+				E8C9947A15FCEE590061D1E0 /* CoreLocation.framework */,
 				E8FD4241160477480012B2A5 /* ZBarSDK */,
 				E8C9946915FBA18A0061D1E0 /* MapKit.framework */,
 				E898602F15FB4D3500ACD5B1 /* UIKit.framework */,
@@ -186,6 +206,7 @@
 		E898603715FB4D3500ACD5B1 /* HMKitchenSink */ = {
 			isa = PBXGroup;
 			children = (
+				E86BE67A1604AF40002AD2B4 /* Resources */,
 				E801AE931600F4170046FE78 /* People */,
 				E83A967715FD37A6008FD6F5 /* PersonService */,
 				E8C9947C15FCEE650061D1E0 /* App */,
@@ -382,6 +403,8 @@
 				E8F7F9BA15FB56E7006B4301 /* SignInViewController.xib in Resources */,
 				E8C9947015FBB1AF0061D1E0 /* UserMapViewController.xib in Resources */,
 				E8C9947815FBB9530061D1E0 /* NextViewController.xib in Resources */,
+				E86BE67C1604B076002AD2B4 /* Beep.caf in Resources */,
+				E86BE6801604B547002AD2B4 /* Beep.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
