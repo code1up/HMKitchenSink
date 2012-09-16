@@ -24,6 +24,26 @@
 @synthesize titleLabel = _titleLabel;
 @synthesize image = _image;
 
+- (void)viewDidLoad
+{
+    UILocalNotification *notification = [[UILocalNotification alloc] init];
+    
+    NSDate *fireDate = [[NSDate alloc] initWithTimeIntervalSinceNow:15];
+    
+    notification.fireDate = fireDate;
+    notification.timeZone = [NSTimeZone defaultTimeZone];
+    
+    notification.alertBody = @"Yay!";
+    notification.alertAction = @"KitchenSinkAction";
+    
+    notification.soundName = UILocalNotificationDefaultSoundName;
+    notification.applicationIconBadgeNumber = 1;
+    
+    // notification.userInfo = [NSDictionary alloc] initWithObjects:<#(NSArray *)#> forKeys:<#(NSArray *)#>;
+    
+    [[UIApplication sharedApplication] scheduleLocalNotification:notification];
+}
+
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     // TODO: generally, revisit shouldAutorotateToInterfaceOrientation.

@@ -52,7 +52,7 @@
 		E86BE67D1604B262002AD2B4 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		E86BE67F1604B547002AD2B4 /* Beep.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = Beep.wav; path = HMKitchenSink/Resources/Beep.wav; sourceTree = "<group>"; };
 		E86BE6811604B56A002AD2B4 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		E898602B15FB4D3500ACD5B1 /* HMKitchenSink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HMKitchenSink.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E898602B15FB4D3500ACD5B1 /* hmkitchensink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hmkitchensink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E898602F15FB4D3500ACD5B1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E898603115FB4D3500ACD5B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E898603315FB4D3500ACD5B1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -168,7 +168,6 @@
 		E898602015FB4D3500ACD5B1 = {
 			isa = PBXGroup;
 			children = (
-				E86BE6811604B56A002AD2B4 /* AudioToolbox.framework */,
 				E898603715FB4D3500ACD5B1 /* HMKitchenSink */,
 				E898602E15FB4D3500ACD5B1 /* Frameworks */,
 				E898602C15FB4D3500ACD5B1 /* Products */,
@@ -178,7 +177,7 @@
 		E898602C15FB4D3500ACD5B1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E898602B15FB4D3500ACD5B1 /* HMKitchenSink.app */,
+				E898602B15FB4D3500ACD5B1 /* hmkitchensink.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -186,6 +185,7 @@
 		E898602E15FB4D3500ACD5B1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E86BE6811604B56A002AD2B4 /* AudioToolbox.framework */,
 				E86BE67D1604B262002AD2B4 /* Security.framework */,
 				E8FD426A160479250012B2A5 /* libiconv.dylib */,
 				E8FD4268160479100012B2A5 /* QuartzCore.framework */,
@@ -206,14 +206,14 @@
 		E898603715FB4D3500ACD5B1 /* HMKitchenSink */ = {
 			isa = PBXGroup;
 			children = (
-				E86BE67A1604AF40002AD2B4 /* Resources */,
-				E801AE931600F4170046FE78 /* People */,
-				E83A967715FD37A6008FD6F5 /* PersonService */,
 				E8C9947C15FCEE650061D1E0 /* App */,
 				E8C9947D15FCEE6B0061D1E0 /* Home */,
-				E8C9947E15FCEE780061D1E0 /* Next */,
-				E8C9947F15FCEE800061D1E0 /* SignIn */,
 				E8C9948015FCEE860061D1E0 /* Map */,
+				E8C9947E15FCEE780061D1E0 /* Next */,
+				E801AE931600F4170046FE78 /* People */,
+				E83A967715FD37A6008FD6F5 /* PersonService */,
+				E86BE67A1604AF40002AD2B4 /* Resources */,
+				E8C9947F15FCEE800061D1E0 /* SignIn */,
 				E898603815FB4D3500ACD5B1 /* Supporting Files */,
 			);
 			path = HMKitchenSink;
@@ -364,7 +364,7 @@
 			);
 			name = HMKitchenSink;
 			productName = HMKitchenSink;
-			productReference = E898602B15FB4D3500ACD5B1 /* HMKitchenSink.app */;
+			productReference = E898602B15FB4D3500ACD5B1 /* hmkitchensink.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -450,6 +450,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Alan Gorton (K375QTGLJS)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -465,6 +466,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PROVISIONING_PROFILE = "213E784D-1293-46C3-9631-792B2DF41746";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -477,6 +479,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Alan Gorton (K375QTGLJS)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -486,6 +489,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "213E784D-1293-46C3-9631-792B2DF41746";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -501,7 +505,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/ZBarSDK\"",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = hmkitchensink;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -516,7 +520,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/ZBarSDK\"",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = hmkitchensink;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

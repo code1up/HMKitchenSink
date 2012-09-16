@@ -14,6 +14,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    // Register for local notifications.
+    [[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound | UIRemoteNotificationTypeAlert)];
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
     HomeViewController *homeViewController = [[HomeViewController alloc] init];
@@ -22,6 +25,30 @@
     
     [self.window makeKeyAndVisible];
     return YES;
+}
+
+// Delegation methods
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)devToken {
+    const void *devTokenBytes = [devToken bytes];
+    
+    NSLog(@"-----");
+    NSLog(@"%@", devToken);
+    NSLog(@"-----");
+    
+    // TODO: self.registered = YES;
+    NSLog(@"didRegisterForRemoteNotificationsWithDeviceToken");
+}
+
+- (void)application:(UIApplication *)app didFailToRegisterForRemoteNotificationsWithError:(NSError *)err {
+    NSLog(@"didFailToRegisterForRemoteNotificationsWithError: %@", err);
+}
+
+- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification
+{
+    // NSString *itemName = [notification.userInfo objectForKey:ToDoItemKey]
+    
+    NSLog(@"%@", notification.alertBody);
+    // application.applicationIconBadgeNumber -= 1;
 }
 
 @end
